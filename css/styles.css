@@ -24,7 +24,7 @@ body. {
 .header-logo,
 .footer-logo {
   font-family: Raleway;
-  font-style: normal;
+
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -120,7 +120,6 @@ body. {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .text-benefits {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -142,7 +141,6 @@ body. {
   color: var(--primary-title-color);
 }
 .team-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
@@ -183,7 +181,6 @@ body. {
   color: var(--primary-title-color);
 }
 .text-projects {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
@@ -200,7 +197,6 @@ body. {
   color: var(--second-header-color);
 }
 .adress-list {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   /* identical to box height, or 171% */
