@@ -1,7 +1,9 @@
 :root {
   --header-color: #212121;
+  --second-header-color: #ffffff;
   --primary-text-color: #757575;
   --second-text-color: #ffffff;
+  --third-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-title-color: #212121;
   --second-title-color: #ffffff;
@@ -17,7 +19,10 @@ body. {
 .link {
   text-decoration: none;
 }
-.header-logo {
+/*шапка*/
+
+.header-logo,
+.footer-logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -45,6 +50,9 @@ body. {
 .menu-link:focus {
   color: var(--accent-text-color);
 }
+.menu-link.current {
+  color: var(--accent-text-color);
+}
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -65,6 +73,7 @@ body. {
 
   color: var(--primary-text-color);
 }
+/*герой*/
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -79,6 +88,7 @@ body. {
   background-color: #2f303a;
 }
 .main-btn {
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
@@ -88,14 +98,16 @@ body. {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--third-text-color);
   background-color: #f5f4fa;
+  cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
   color: #f5f4fa;
   background-color: #2196f3;
 }
+/* наши преимущества*/
 .list-title-benefits {
   font-weight: bold;
   font-size: 14px;
@@ -117,6 +129,7 @@ body. {
 
   color: var(--primary-text-color);
 }
+/*наша команда*/
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -139,6 +152,53 @@ body. {
 
   color: var(--primary-text-color);
 }
+/*фильтр портфолио*/
+.btn-filters {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--third-text-color);
+  cursor: pointer;
+}
+.btn-filters:hover,
+.btn-filters:focus {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+/*список проектов*/
+.title-img {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-title-color);
+}
+.text-projects {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/*футер*/
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  color: var(--second-header-color);
+}
 .adress-list {
   font-weight: normal;
   font-size: 14px;
@@ -146,7 +206,6 @@ body. {
   /* identical to box height, or 171% */
 
   letter-spacing: 0.03em;
-  background-color: #2f303a;
 }
 .adress-area {
   color: var(--second-text-color);
@@ -155,6 +214,8 @@ body. {
 .adress-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+.adress-area:hover,
+.adress-area:focus,
 .adress-mail:hover,
 .adress-mail:focus,
 .adress-tel:hover,
