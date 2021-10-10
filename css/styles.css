@@ -7,11 +7,15 @@
   --accent-text-color: #2196f3;
   --primary-title-color: #212121;
   --second-title-color: #ffffff;
+  --main-background-color: #e5e5e5;
+  --first-background-color: #2f303a;
+  --second-background-color: #2196f3;
+  --third-background-color: #f5f4fa;
 }
 
 body. {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-color: var(--main-background-color);
 }
 .list {
   list-style: none;
@@ -38,12 +42,13 @@ body. {
 .header-logo-part {
   color: var(--accent-text-color);
 }
-
-.menu-link {
+.menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.menu-link {
   color: var(--header-color);
 }
 .menu-link:hover,
@@ -53,27 +58,21 @@ body. {
 .menu-link.current {
   color: var(--accent-text-color);
 }
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+.header-mail,
+.header-tel {
   color: var(--primary-text-color);
 }
 .header-mail:hover,
-.header-mail:focus {
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
   color: var(--accent-text-color);
 }
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
-  color: var(--primary-text-color);
-}
 /*герой*/
+.section-hero {
+  background-color: var(--first-background-color);
+}
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -85,10 +84,11 @@ body. {
   text-transform: uppercase;
 
   color: var(--second-title-color);
-  background-color: #2f303a;
 }
 .main-btn {
   font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
@@ -98,14 +98,14 @@ body. {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--third-text-color);
-  background-color: #f5f4fa;
+  color: var(--second-text-color);
+  background-color: var(--second-background-color);
   cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
-  color: #f5f4fa;
-  background-color: #2196f3;
+  color: var(--third-text-color);
+  background-color: var(--third-background-color);
 }
 /* наши преимущества*/
 .list-title-benefits {
