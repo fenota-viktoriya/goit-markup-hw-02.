@@ -190,6 +190,10 @@ body. {
   color: var(--primary-text-color);
 }
 /*футер*/
+.address {
+  display: block;
+  font-style: italic;
+}
 .footer {
   background-color: #2f303a;
 }
