@@ -158,7 +158,7 @@ body {
 
 .btn-filters:hover,
 .btn-filters:focus {
-  color: #f5f4fa;
+  color:var(--second-text-color);
   background-color: #2196f3;
 }
 
@@ -188,7 +188,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color:var(--first-background-color);
 }
 
 .footer-logo {
