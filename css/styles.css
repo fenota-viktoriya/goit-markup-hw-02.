@@ -159,7 +159,7 @@ body {
 .btn-filters:hover,
 .btn-filters:focus {
   color:var(--second-text-color);
-  background-color: #2196f3;
+  background-color:var(--second-background-color);
 }
 
 /*список проектов*/
