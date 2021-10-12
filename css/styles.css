@@ -7,10 +7,11 @@
   --accent-text-color: #2196f3;
   --primary-title-color: #212121;
   --second-title-color: #ffffff;
-  --main-background-color: #e5e5e5;
+  --main-background-color: #ffffff;
   --first-background-color: #2f303a;
   --second-background-color: #2196f3;
   --third-background-color: #f5f4fa;
+  --hover-color: #188ce8;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   background-color: var(--main-background-color);
 }
 
@@ -35,10 +35,14 @@ body {
 
 .header-logo,
 .footer-logo {
-  font-family: Raleway
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
   color: var(--header-color);
 }
 
@@ -47,7 +51,7 @@ body {
 }
 
 .menu {
-  font-weight: 500; 
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -74,7 +78,7 @@ body {
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
- color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 /*герой*/
@@ -99,37 +103,45 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   /* identical to box height, or 187% */
   color: var(--second-text-color);
+
   background-color: var(--second-background-color);
   cursor: pointer;
 }
 
 .main-btn:hover,
 .main-btn:focus {
-  color: var(--third-text-color);
-  background-color: var(--third-background-color);
+  color: var(--second-text-color);
+  background-color: var(--hover-color);
 }
-
 /* наши преимущества*/
 
 .list-title-benefits {
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
+
   color: var(--primary-title-color);
 }
 
 .text-benefits {
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /*наша команда*/
-
+.team-seaction {
+  background-color: var(--third-background-color);
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   /* identical to box height */
   text-align: center;
   color: var(--primary-title-color);
@@ -138,6 +150,7 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   /* identical to box height */
   text-align: center;
   color: var(--primary-text-color);
@@ -150,6 +163,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   /* identical to box height, or 162% */
   text-align: center;
   color: var(--third-text-color);
@@ -158,11 +172,20 @@ body {
 
 .btn-filters:hover,
 .btn-filters:focus {
-  color:var(--second-text-color);
-  background-color:var(--second-background-color);
+  color: var(--second-text-color);
+  background-color: var(--second-background-color);
 }
 
 /*список проектов*/
+.section-litle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-title-color);
+}
 
 .title-img {
   font-weight: bold;
@@ -176,6 +199,7 @@ body {
 .text-projects {
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
   /* identical to box height, or 187% */
   color: var(--primary-text-color);
 }
@@ -188,7 +212,7 @@ body {
 }
 
 .footer {
-  background-color:var(--first-background-color);
+  background-color: var(--first-background-color);
 }
 
 .footer-logo {
